@@ -8,10 +8,11 @@
 
     "dev": "npm run redis & nodemon server.js",
 
-    "pretest": "xo",
+    "pretest": "npm run lint",
     "test": "ava",
 
-    "redis": "redis-server /usr/local/etc/redis.conf"
+    "redis": "redis-server /usr/local/etc/redis.conf",
+    "lint": "xo"
   },
   "repository": "https://github.com/agnostechvalley/npm-for-scripting.git",
   "author": "Blain Smith <rebelgeek@blainsmith.com> (http://blainsmith.com/)",
