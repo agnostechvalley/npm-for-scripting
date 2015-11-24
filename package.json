@@ -1,0 +1,28 @@
+{
+  "name": "npm-for-scripting",
+  "version": "1.0.0",
+  "description": "Example repo for npm scripts",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm run redis & node server.js",
+
+    "dev": "npm run redis & nodemon server.js",
+
+    "pretest": "xo",
+    "test": "ava",
+
+    "redis": "redis-server /usr/local/etc/redis.conf"
+  },
+  "repository": "https://github.com/agnostechvalley/npm-for-scripting.git",
+  "author": "Blain Smith <rebelgeek@blainsmith.com> (http://blainsmith.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^11.1.1"
+  },
+  "devDependencies": {
+    "ava": "^0.5.0",
+    "tape": "^4.2.2",
+    "nodemon": "^1.8.1",
+    "xo": "^0.11.2"
+  }
+}
